@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Sign Up Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              bgMobile: "url('/images/bg-intro-mobile.png')",
+              bgDesktop: "url('/images/bg-intro-desktop.png')",
+            },
+            colors: {
+              primaryRed: "hsl(0, 100%, 74%)",
+              primaryGreen: "hsl(154, 59%, 51%)",
+              blue: {
+                accent: "hsl(248, 32%, 49%)",
+                dark: "hsl(249, 10%, 26%)",
+                grayish: "hsl(246, 25%, 77%)",
+              },
+            },
+            fontFamily: {
+              poppins: ["Poppins", "static"],
+            },
+            boxShadow: {
+              "3xl": "0px 8px 6px 0px rgba(122,122,122,0.40)",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body
+    class="mx-auto font-poppins bg-primaryRed bg-bgMobile md:bg-bgDesktop min-h-screen flex justify-center gap-4 items-center"
+  >
+    <div class="w-5/6 md:flex md:content-center md:justify-center">
+      <div
+        class="text-center md:justify-center text-white md:my-auto md:w-6/12"
+      >
+        <h1
+          class="text-center md:text-left text-white font-semibold text-2xl md:text-4xl xl:text-7xl mb-6"
+        >
+          Learn to code by watching others
+        </h1>
+        <h2
+          class="font-normal leading-lose mb-12 md:text-left md:text-base xl:text-2xl"
+        >
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </h2>
+      </div>
+      <div class="form block xl:w-5/12">
+        <div
+          class="text-white bg-blue-accent text-center py-5 px-16 rounded-lg shadow-3xl mb-6 cursor-pointer"
+        >
+          <span class="font-semibold">Try it free 7 days</span> then $20/mo.
+          thereafter
+        </div>
+        <div class="bg-white rounded-lg text-center p-6 xl:p-10 shadow-3xl">
+          <input
+            type="text"
+            placeholder="First Name"
+            class="firstNameInput border p-3 rounded-md mb-4 placeholder:text-gray-950 font-medium w-full focus:outline-none focus:ring focus:ring-red-300"
+          />
+          <input
+            type="text"
+            placeholder="Last Name"
+            class="lastNameInput border p-3 rounded-md mb-4 text-black placeholder:text-gray-950 font-medium w-full focus:outline-none focus:ring focus:ring-red-300"
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            class="emailInput border p-3 rounded-md mb-4 text-black placeholder:text-gray-950 font-medium w-full focus:outline-none focus:ring focus:ring-red-300"
+          />
+          <p
+            class="invalid-email text-xs text-primaryRed font-medium mb-2 hidden"
+          >
+            Invalid email address
+          </p>
+          <input
+            type="password"
+            placeholder="Password"
+            class="passwordInput border p-3 rounded-md mb-4 text-black placeholder:text-gray-950 font-medium w-full focus:outline-none focus:ring focus:ring-red-300"
+          />
+          <button
+            class="btnClaim bg-primaryGreen text-white text-uppercase p-4 w-full uppercase font-medium tracking-wide rounded-lg shadow-3xl mb-4 cursor-pointer"
+          >
+            Claim your free trial
+          </button>
+          <p
+            class="error-message text-xs text-primaryRed font-medium mb-2 hidden"
+          >
+            Fill out all the input fields
+          </p>
+          <p class="text-xs text-slate-300 font-medium mb-2">
+            By clicking the button, you are agreeing to our
+            <span class="text-primaryRed">Terms and Services</span>
+          </p>
+        </div>
+      </div>
+      <div
+        class="submission-completed hidden xl:w-5/12 bg-white rounded-lg text-center p-6 xl:p-10 shadow-3xl md:text-2xl xl:text-4xl flex flex-col items-center text-primaryRed"
+      >
+        <img
+          src="images/icons8-international-thanks-day-50.png"
+          class="mx-auto w-28 mb-4"
+        />
+        <h3>You are in! Thanks for subscribing...</h3>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
