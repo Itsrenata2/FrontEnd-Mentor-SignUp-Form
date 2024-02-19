@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github Repository](https://github.com/Itsrenata2/FrontEnd-Mentor-SignUp-Form)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [FrontEnd Mentor | SignUp Form](https://front-end-mentor-sign-up-form-one.vercel.app/)
 
 ## My process
 
